@@ -1,0 +1,20 @@
+# Maintainer-only release tooling and exported checkpoints
+/release_assets/
+
+# Data, features and experiment outputs
+/manifests/
+/features/
+/runs/
+/checkpoints/
+*.npy
+*.safetensors
+*.pt
+*.pth
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/

@@ -1,0 +1,11 @@
+torch>=2.1
+speechbrain==0.5.16
+hyperpyyaml
+numpy
+scikit-learn
+safetensors
+einops
+tqdm
+# Feature extraction from audio (scripts/extract_features.py)
+transformers
+funasr

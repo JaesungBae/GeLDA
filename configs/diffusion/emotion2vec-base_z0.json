@@ -1,0 +1,10 @@
+{
+  "model": {
+    "input_size": 28,
+    "latent_dim": 768,
+    "ref_dim": 768,
+    "sigma_data": 0.25,
+    "sigma_min": 0.005,
+    "sigma_max": 40.0
+  }
+}

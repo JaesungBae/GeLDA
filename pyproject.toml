@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gelda"
+version = "1.0.0"
+description = "Semantics-aware generative latent data augmentation (GeLDA) for zero-/few-shot speech emotion recognition"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+dependencies = [
+    "torch>=2.1",
+    "speechbrain==0.5.16",  # SER recipe (Stages 1 and 3); the version used for the paper
+    "hyperpyyaml",
+    "numpy",
+    "scikit-learn",
+    "safetensors",
+    "einops",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+# Only needed to extract SFM features from audio (scripts/extract_features.py).
+features = [
+    "transformers",
+    "funasr",  # emotion2vec
+]
+
+[tool.setuptools.packages.find]
+include = ["gelda*"]
