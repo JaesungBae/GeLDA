@@ -5,10 +5,11 @@ Official implementation of
 > **Semantics-Aware Generative Latent Data Augmentation for Zero-shot Speech Emotion Recognition**<br>
 > Jaesung Bae and Minje Kim
 
-GeLDA performs **zero-shot speech emotion recognition (SER) in 10 languages**, where only neutral speech of the
-target language is available, and **few-shot SER in 12 languages**, where the emotional data is limited and
-imbalanced. Checkpoints for every language are released, so emotion scores for a waveform take a few lines of
-code ([Quick usage](#quick-usage)).
+GeLDA performs **zero-shot speech emotion recognition (SER) in 10 languages** (Amharic, Bangla, French, German,
+Italian, Persian, Polish, Russian, Spanish and Urdu), where only neutral speech of the target language is
+available, and **few-shot SER in 12 languages** (the same ten plus Greek and Turkish), where the emotional data
+is limited and imbalanced. Checkpoints for every language are released, so emotion scores for a waveform take a
+few lines of code ([Quick usage](#quick-usage)).
 
 To do so, GeLDA trains a small conditional diffusion model (21M parameters) in the latent space of a frozen
 speech foundation model (SFM) and uses it to synthesise emotional speech *representations* for the target
